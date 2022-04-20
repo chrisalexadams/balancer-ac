@@ -1,0 +1,395 @@
+digraph G {
+  graph [ ratio = "auto", page = "100", compound =true, bgcolor = "#2e3e56" ];
+  node [ style = "filled", fillcolor = "#edad56", color = "#edad56", penwidth =3 ];
+  edge [ color = "#fcfcfc", penwidth =2, fontname = "helvetica Neue Ultra Light" ];
+subgraph "clusterIAccessControl" {
+  graph [ label = "IAccessControl  (iface)", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "IAccessControl.hasRole" [ label = "hasRole", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IAccessControl.getRoleAdmin" [ label = "getRoleAdmin", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IAccessControl.grantRole" [ label = "grantRole", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IAccessControl.revokeRole" [ label = "revokeRole", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IAccessControl.renounceRole" [ label = "renounceRole", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+}
+
+subgraph "clusterStrings" {
+  graph [ label = "Strings  (lib)", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "Strings.toString" [ label = "toString", color = "#f2c383", fillcolor = "#f2c383" ];
+  "Strings.toHexString" [ label = "toHexString" ];
+}
+
+subgraph "clusterContext" {
+  graph [ label = "Context", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "Context._msgSender" [ label = "_msgSender", color = "#f2c383", fillcolor = "#f2c383" ];
+  "Context._msgData" [ label = "_msgData", color = "#f2c383", fillcolor = "#f2c383" ];
+}
+
+subgraph "clusterIERC165" {
+  graph [ label = "IERC165  (iface)", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "IERC165.supportsInterface" [ label = "supportsInterface", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+}
+
+subgraph "clusterERC165" {
+  graph [ label = "ERC165", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "ERC165.supportsInterface" [ label = "supportsInterface", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC165.type" [ label = "type" ];
+}
+
+subgraph "clusterAccessControl" {
+  graph [ label = "AccessControl", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "AccessControl.onlyRole" [ label = "onlyRole", color = "#1bc6a6", shape =doubleoctagon ];
+  "AccessControl.supportsInterface" [ label = "supportsInterface", color = "#FF9797", fillcolor = "#FF9797" ];
+  "AccessControl.hasRole" [ label = "hasRole" ];
+  "AccessControl._checkRole" [ label = "_checkRole" ];
+  "AccessControl.getRoleAdmin" [ label = "getRoleAdmin" ];
+  "AccessControl.grantRole" [ label = "grantRole", color = "#FF9797", fillcolor = "#FF9797" ];
+  "AccessControl.revokeRole" [ label = "revokeRole", color = "#FF9797", fillcolor = "#FF9797" ];
+  "AccessControl.renounceRole" [ label = "renounceRole", color = "#FF9797", fillcolor = "#FF9797" ];
+  "AccessControl._setupRole" [ label = "_setupRole", color = "#f2c383", fillcolor = "#f2c383" ];
+  "AccessControl._setRoleAdmin" [ label = "_setRoleAdmin", color = "#f2c383", fillcolor = "#f2c383" ];
+  "AccessControl._grantRole" [ label = "_grantRole" ];
+  "AccessControl._revokeRole" [ label = "_revokeRole" ];
+  "AccessControl._msgSender" [ label = "_msgSender" ];
+}
+
+subgraph "clusterIERC20" {
+  graph [ label = "IERC20  (iface)", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "IERC20.totalSupply" [ label = "totalSupply" ];
+  "IERC20.balanceOf" [ label = "balanceOf" ];
+  "IERC20.transfer" [ label = "transfer" ];
+  "IERC20.allowance" [ label = "allowance", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IERC20.approve" [ label = "approve" ];
+  "IERC20.transferFrom" [ label = "transferFrom" ];
+}
+
+subgraph "clusterIERC20Metadata" {
+  graph [ label = "IERC20Metadata  (iface)", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "IERC20Metadata.name" [ label = "name", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IERC20Metadata.symbol" [ label = "symbol", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IERC20Metadata.decimals" [ label = "decimals", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+}
+
+subgraph "clusterERC20" {
+  graph [ label = "ERC20", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "ERC20.<Constructor>" [ label = "<Constructor>", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC20.name" [ label = "name", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC20.symbol" [ label = "symbol", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC20.decimals" [ label = "decimals", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC20.totalSupply" [ label = "totalSupply", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC20.balanceOf" [ label = "balanceOf", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC20.transfer" [ label = "transfer", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC20.allowance" [ label = "allowance", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC20.approve" [ label = "approve", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC20.transferFrom" [ label = "transferFrom", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC20.increaseAllowance" [ label = "increaseAllowance", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC20.decreaseAllowance" [ label = "decreaseAllowance", color = "#FF9797", fillcolor = "#FF9797" ];
+  "ERC20._transfer" [ label = "_transfer" ];
+  "ERC20._mint" [ label = "_mint", color = "#f2c383", fillcolor = "#f2c383" ];
+  "ERC20._burn" [ label = "_burn", color = "#f2c383", fillcolor = "#f2c383" ];
+  "ERC20._approve" [ label = "_approve" ];
+  "ERC20._beforeTokenTransfer" [ label = "_beforeTokenTransfer" ];
+  "ERC20._afterTokenTransfer" [ label = "_afterTokenTransfer" ];
+  "ERC20._msgSender" [ label = "_msgSender" ];
+}
+
+subgraph "clusterOwnable" {
+  graph [ label = "Ownable", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "Ownable.<Constructor>" [ label = "<Constructor>", color = "#FF9797", fillcolor = "#FF9797" ];
+  "Ownable.onlyOwner" [ label = "onlyOwner", color = "#1bc6a6", shape =doubleoctagon ];
+  "Ownable.renounceOwnership" [ label = "renounceOwnership", color = "#FF9797", fillcolor = "#FF9797" ];
+  "Ownable.transferOwnership" [ label = "transferOwnership", color = "#FF9797", fillcolor = "#FF9797" ];
+  "Ownable._transferOwnership" [ label = "_transferOwnership" ];
+}
+
+subgraph "clusterStakedTokenWrapper" {
+  graph [ label = "StakedTokenWrapper", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "StakedTokenWrapper.balanceOf" [ label = "balanceOf", color = "#FF9797", fillcolor = "#FF9797" ];
+  "StakedTokenWrapper.stakeFor" [ label = "stakeFor", color = "brown", fillcolor = "#FF9797" ];
+  "StakedTokenWrapper.withdraw" [ label = "withdraw", color = "#FF9797", fillcolor = "#FF9797" ];
+}
+
+subgraph "clusterIRouter" {
+  graph [ label = "IRouter  (iface)", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "IRouter.addLiquidity" [ label = "addLiquidity" ];
+  "IRouter.addLiquidityAVAX" [ label = "addLiquidityAVAX", color = "brown", fillcolor = "#ffbdb9" ];
+  "IRouter.removeLiquidity" [ label = "removeLiquidity", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IRouter.removeLiquidityAVAX" [ label = "removeLiquidityAVAX", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IRouter.removeLiquidityWithPermit" [ label = "removeLiquidityWithPermit", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IRouter.removeLiquidityAVAXWithPermit" [ label = "removeLiquidityAVAXWithPermit", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IRouter.removeLiquidityAVAXSupportingFeeOnTransferTokens" [ label = "removeLiquidityAVAXSupportingFeeOnTransferTokens", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IRouter.removeLiquidityAVAXWithPermitSupportingFeeOnTransferTokens" [ label = "removeLiquidityAVAXWithPermitSupportingFeeOnTransferTokens", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IRouter.swapExactTokensForTokens" [ label = "swapExactTokensForTokens" ];
+  "IRouter.swapTokensForExactTokens" [ label = "swapTokensForExactTokens", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IRouter.swapExactAVAXForTokens" [ label = "swapExactAVAXForTokens", color = "brown", fillcolor = "#ffbdb9" ];
+  "IRouter.swapTokensForExactAVAX" [ label = "swapTokensForExactAVAX", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IRouter.swapExactTokensForAVAX" [ label = "swapExactTokensForAVAX", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IRouter.swapAVAXForExactTokens" [ label = "swapAVAXForExactTokens", color = "brown", fillcolor = "#ffbdb9" ];
+  "IRouter.swapExactTokensForTokensSupportingFeeOnTransferTokens" [ label = "swapExactTokensForTokensSupportingFeeOnTransferTokens", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IRouter.swapExactAVAXForTokensSupportingFeeOnTransferTokens" [ label = "swapExactAVAXForTokensSupportingFeeOnTransferTokens", color = "brown", fillcolor = "#ffbdb9" ];
+  "IRouter.swapExactTokensForAVAXSupportingFeeOnTransferTokens" [ label = "swapExactTokensForAVAXSupportingFeeOnTransferTokens", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IRouter.quote" [ label = "quote", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IRouter.getAmountOut" [ label = "getAmountOut", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IRouter.getAmountIn" [ label = "getAmountIn", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IRouter.getAmountsOut" [ label = "getAmountsOut" ];
+  "IRouter.getAmountsIn" [ label = "getAmountsIn", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+}
+
+subgraph "clusterIPair" {
+  graph [ label = "IPair  (iface)", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "IPair.token0" [ label = "token0" ];
+  "IPair.token1" [ label = "token1" ];
+  "IPair.swap" [ label = "swap", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IPair.getReserves" [ label = "getReserves", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IPair.mint" [ label = "mint", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IPair.sync" [ label = "sync", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IPair.approve" [ label = "approve" ];
+  "IPair.totalSupply" [ label = "totalSupply" ];
+}
+
+subgraph "clusterIMiniChefV2" {
+  graph [ label = "IMiniChefV2  (iface)", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "IMiniChefV2.pendingSushi" [ label = "pendingSushi" ];
+  "IMiniChefV2.deposit" [ label = "deposit" ];
+  "IMiniChefV2.withdraw" [ label = "withdraw" ];
+  "IMiniChefV2.harvest" [ label = "harvest" ];
+}
+
+subgraph "clusterIStrategy" {
+  graph [ label = "IStrategy  (iface)", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "IStrategy.deposit" [ label = "deposit", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IStrategy.reinvest" [ label = "reinvest", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "IStrategy.withdraw" [ label = "withdraw", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+}
+
+subgraph "clusterMIMETHStrategy2" {
+  graph [ label = "MIMETHStrategy2", color = "#445773", fontcolor = "#f0f0f0", style = "rounded", bgcolor = "#445773" ];
+  "MIMETHStrategy2.onlyAdmin" [ label = "onlyAdmin", color = "#1bc6a6", shape =doubleoctagon ];
+  "MIMETHStrategy2.<Constructor>" [ label = "<Constructor>", color = "#FF9797", fillcolor = "#FF9797" ];
+  "MIMETHStrategy2.onlyEOA" [ label = "onlyEOA", color = "#1bc6a6", shape =doubleoctagon ];
+  "MIMETHStrategy2.setArbi" [ label = "setArbi", color = "#FF9797", fillcolor = "#FF9797" ];
+  "MIMETHStrategy2.setFeeDestination" [ label = "setFeeDestination", color = "#FF9797", fillcolor = "#FF9797" ];
+  "MIMETHStrategy2.setAllowances" [ label = "setAllowances", color = "#FF9797", fillcolor = "#FF9797" ];
+  "MIMETHStrategy2.setRewardAllowances" [ label = "setRewardAllowances" ];
+  "MIMETHStrategy2.revokeAllowance" [ label = "revokeAllowance", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "MIMETHStrategy2.deposit" [ label = "deposit", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "MIMETHStrategy2._deposit" [ label = "_deposit" ];
+  "MIMETHStrategy2.withdraw" [ label = "withdraw", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "MIMETHStrategy2.getSharesForDepositTokens" [ label = "getSharesForDepositTokens" ];
+  "MIMETHStrategy2.getDepositTokensForShares" [ label = "getDepositTokensForShares" ];
+  "MIMETHStrategy2.checkReward" [ label = "checkReward" ];
+  "MIMETHStrategy2.estimateReinvestReward" [ label = "estimateReinvestReward", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "MIMETHStrategy2.reinvest" [ label = "reinvest", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "MIMETHStrategy2._reinvest" [ label = "_reinvest" ];
+  "MIMETHStrategy2._convertRewardTokensToDepositTokens" [ label = "_convertRewardTokensToDepositTokens" ];
+  "MIMETHStrategy2.convertSpell" [ label = "convertSpell" ];
+  "MIMETHStrategy2._stakeDepositTokens" [ label = "_stakeDepositTokens" ];
+  "MIMETHStrategy2._withdrawDepositTokens" [ label = "_withdrawDepositTokens" ];
+  "MIMETHStrategy2.updateMinTokensToReinvest" [ label = "updateMinTokensToReinvest", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "MIMETHStrategy2.updateWithdrawFeeBips" [ label = "updateWithdrawFeeBips", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "MIMETHStrategy2.updateAdminFee" [ label = "updateAdminFee", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "MIMETHStrategy2.updateReinvestReward" [ label = "updateReinvestReward", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "MIMETHStrategy2.updateRequireReinvestBeforeDeposit" [ label = "updateRequireReinvestBeforeDeposit", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "MIMETHStrategy2.updateMinTokensToReinvestBeforeDeposit" [ label = "updateMinTokensToReinvestBeforeDeposit", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "MIMETHStrategy2.recoverETH" [ label = "recoverETH", color = "#ffbdb9", fillcolor = "#ffbdb9" ];
+  "MIMETHStrategy2.balanceOf" [ label = "balanceOf" ];
+  "MIMETHStrategy2.payable" [ label = "payable" ];
+}
+
+  "Strings.toHexString";
+  "ERC165.supportsInterface";
+  "ERC165.type";
+  "AccessControl.onlyRole";
+  "AccessControl._checkRole";
+  "AccessControl._msgSender";
+  "AccessControl.hasRole";
+  "AccessControl.grantRole";
+  "AccessControl._grantRole";
+  "AccessControl.getRoleAdmin";
+  "AccessControl.revokeRole";
+  "AccessControl._revokeRole";
+  "AccessControl.renounceRole";
+  "AccessControl._setupRole";
+  "AccessControl._setRoleAdmin";
+  "ERC20.transfer";
+  "ERC20._transfer";
+  "ERC20._msgSender";
+  "ERC20.approve";
+  "ERC20._approve";
+  "ERC20.transferFrom";
+  "ERC20.increaseAllowance";
+  "ERC20.decreaseAllowance";
+  "ERC20._beforeTokenTransfer";
+  "ERC20._afterTokenTransfer";
+  "ERC20._mint";
+  "ERC20._burn";
+  "Ownable.transferOwnership";
+  "Ownable._transferOwnership";
+  "StakedTokenWrapper.stakeFor";
+  "IERC20.transferFrom";
+  "StakedTokenWrapper.withdraw";
+  "IERC20.transfer";
+  "MIMETHStrategy2.onlyAdmin";
+  "MIMETHStrategy2.<Constructor>";
+  "IPair.token0";
+  "IPair.token1";
+  "MIMETHStrategy2.setAllowances";
+  "IPair.approve";
+  "IPair.totalSupply";
+  "IERC20.approve";
+  "IERC20.totalSupply";
+  "MIMETHStrategy2.setRewardAllowances";
+  "MIMETHStrategy2.deposit";
+  "MIMETHStrategy2._deposit";
+  "MIMETHStrategy2.checkReward";
+  "MIMETHStrategy2._reinvest";
+  "MIMETHStrategy2._stakeDepositTokens";
+  "MIMETHStrategy2.getSharesForDepositTokens";
+  "MIMETHStrategy2.withdraw";
+  "MIMETHStrategy2.balanceOf";
+  "MIMETHStrategy2.getDepositTokensForShares";
+  "MIMETHStrategy2._withdrawDepositTokens";
+  "IMiniChefV2.pendingSushi";
+  "IERC20.balanceOf";
+  "MIMETHStrategy2.estimateReinvestReward";
+  "MIMETHStrategy2.reinvest";
+  "IMiniChefV2.harvest";
+  "MIMETHStrategy2._convertRewardTokensToDepositTokens";
+  "IRouter.getAmountsOut";
+  "IRouter.swapExactTokensForTokens";
+  "MIMETHStrategy2.convertSpell";
+  "IRouter.addLiquidity";
+  "IMiniChefV2.deposit";
+  "IMiniChefV2.withdraw";
+  "MIMETHStrategy2.recoverETH";
+  "MIMETHStrategy2.payable";
+  "Strings.toHexString" -> "Strings.toHexString" [ color = "#1bc6a6" ];
+  "ERC165.supportsInterface" -> "ERC165.type" [ color = "#1bc6a6" ];
+  "AccessControl.onlyRole" -> "AccessControl._checkRole" [ color = "#1bc6a6" ];
+  "AccessControl.onlyRole" -> "AccessControl._msgSender" [ color = "#1bc6a6" ];
+  "ERC165.supportsInterface" -> "ERC165.type" [ color = "#1bc6a6" ];
+  "ERC165.supportsInterface" -> "ERC165.supportsInterface" [ color = "white" ];
+  "AccessControl._checkRole" -> "AccessControl.hasRole" [ color = "#1bc6a6" ];
+  "AccessControl._checkRole" -> "Strings.toHexString" [ color = "white" ];
+  "AccessControl._checkRole" -> "Strings.toHexString" [ color = "white" ];
+  "AccessControl.grantRole" -> "AccessControl._grantRole" [ color = "#1bc6a6" ];
+  "AccessControl.grantRole" -> "AccessControl.getRoleAdmin" [ color = "#1bc6a6" ];
+  "AccessControl.revokeRole" -> "AccessControl._revokeRole" [ color = "#1bc6a6" ];
+  "AccessControl.revokeRole" -> "AccessControl.getRoleAdmin" [ color = "#1bc6a6" ];
+  "AccessControl.renounceRole" -> "AccessControl._msgSender" [ color = "#1bc6a6" ];
+  "AccessControl.renounceRole" -> "AccessControl._revokeRole" [ color = "#1bc6a6" ];
+  "AccessControl._setupRole" -> "AccessControl._grantRole" [ color = "#1bc6a6" ];
+  "AccessControl._setRoleAdmin" -> "AccessControl.getRoleAdmin" [ color = "#1bc6a6" ];
+  "AccessControl._grantRole" -> "AccessControl.hasRole" [ color = "#1bc6a6" ];
+  "AccessControl._grantRole" -> "AccessControl._msgSender" [ color = "#1bc6a6" ];
+  "AccessControl._revokeRole" -> "AccessControl.hasRole" [ color = "#1bc6a6" ];
+  "AccessControl._revokeRole" -> "AccessControl._msgSender" [ color = "#1bc6a6" ];
+  "ERC20.transfer" -> "ERC20._transfer" [ color = "#1bc6a6" ];
+  "ERC20.transfer" -> "ERC20._msgSender" [ color = "#1bc6a6" ];
+  "ERC20.approve" -> "ERC20._approve" [ color = "#1bc6a6" ];
+  "ERC20.approve" -> "ERC20._msgSender" [ color = "#1bc6a6" ];
+  "ERC20.transferFrom" -> "ERC20._transfer" [ color = "#1bc6a6" ];
+  "ERC20.transferFrom" -> "ERC20._msgSender" [ color = "#1bc6a6" ];
+  "ERC20.transferFrom" -> "ERC20._approve" [ color = "#1bc6a6" ];
+  "ERC20.transferFrom" -> "ERC20._msgSender" [ color = "#1bc6a6" ];
+  "ERC20.increaseAllowance" -> "ERC20._approve" [ color = "#1bc6a6" ];
+  "ERC20.increaseAllowance" -> "ERC20._msgSender" [ color = "#1bc6a6" ];
+  "ERC20.increaseAllowance" -> "ERC20._msgSender" [ color = "#1bc6a6" ];
+  "ERC20.decreaseAllowance" -> "ERC20._msgSender" [ color = "#1bc6a6" ];
+  "ERC20.decreaseAllowance" -> "ERC20._approve" [ color = "#1bc6a6" ];
+  "ERC20.decreaseAllowance" -> "ERC20._msgSender" [ color = "#1bc6a6" ];
+  "ERC20._transfer" -> "ERC20._beforeTokenTransfer" [ color = "#1bc6a6" ];
+  "ERC20._transfer" -> "ERC20._afterTokenTransfer" [ color = "#1bc6a6" ];
+  "ERC20._mint" -> "ERC20._beforeTokenTransfer" [ color = "#1bc6a6" ];
+  "ERC20._mint" -> "ERC20._afterTokenTransfer" [ color = "#1bc6a6" ];
+  "ERC20._burn" -> "ERC20._beforeTokenTransfer" [ color = "#1bc6a6" ];
+  "ERC20._burn" -> "ERC20._afterTokenTransfer" [ color = "#1bc6a6" ];
+  "Ownable.transferOwnership" -> "Ownable._transferOwnership" [ color = "#1bc6a6" ];
+  "StakedTokenWrapper.stakeFor" -> "IERC20.transferFrom" [ color = "white" ];
+  "StakedTokenWrapper.withdraw" -> "IERC20.transfer" [ color = "white" ];
+  "MIMETHStrategy2.onlyAdmin" -> "AccessControl.hasRole" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2.<Constructor>" -> "IPair.token0" [ color = "white" ];
+  "MIMETHStrategy2.<Constructor>" -> "IPair.token1" [ color = "white" ];
+  "MIMETHStrategy2.<Constructor>" -> "AccessControl._setupRole" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2.setAllowances" -> "IPair.approve" [ color = "white" ];
+  "MIMETHStrategy2.setAllowances" -> "IPair.totalSupply" [ color = "white" ];
+  "MIMETHStrategy2.setAllowances" -> "IERC20.approve" [ color = "white" ];
+  "MIMETHStrategy2.setAllowances" -> "IERC20.totalSupply" [ color = "white" ];
+  "MIMETHStrategy2.setAllowances" -> "IERC20.approve" [ color = "white" ];
+  "MIMETHStrategy2.setAllowances" -> "IERC20.totalSupply" [ color = "white" ];
+  "MIMETHStrategy2.setAllowances" -> "MIMETHStrategy2.setRewardAllowances" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2.setRewardAllowances" -> "IERC20.approve" [ color = "white" ];
+  "MIMETHStrategy2.setRewardAllowances" -> "IERC20.totalSupply" [ color = "white" ];
+  "MIMETHStrategy2.setRewardAllowances" -> "IERC20.approve" [ color = "white" ];
+  "MIMETHStrategy2.setRewardAllowances" -> "IERC20.totalSupply" [ color = "white" ];
+  "MIMETHStrategy2.deposit" -> "MIMETHStrategy2._deposit" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2._deposit" -> "IERC20.totalSupply" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2._deposit" -> "MIMETHStrategy2.checkReward" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2._deposit" -> "MIMETHStrategy2._reinvest" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2._deposit" -> "IERC20.transferFrom" [ color = "white" ];
+  "MIMETHStrategy2._deposit" -> "MIMETHStrategy2._stakeDepositTokens" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2._deposit" -> "ERC20._mint" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2._deposit" -> "MIMETHStrategy2.getSharesForDepositTokens" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2.withdraw" -> "MIMETHStrategy2.balanceOf" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2.withdraw" -> "MIMETHStrategy2.getDepositTokensForShares" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2.withdraw" -> "MIMETHStrategy2._withdrawDepositTokens" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2.withdraw" -> "IERC20.transfer" [ color = "white" ];
+  "MIMETHStrategy2.withdraw" -> "IERC20.transfer" [ color = "white" ];
+  "MIMETHStrategy2.withdraw" -> "ERC20._burn" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2.getSharesForDepositTokens" -> "IERC20.totalSupply" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2.getSharesForDepositTokens" -> "IERC20.totalSupply" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2.getDepositTokensForShares" -> "IERC20.totalSupply" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2.getDepositTokensForShares" -> "IERC20.totalSupply" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2.checkReward" -> "IMiniChefV2.pendingSushi" [ color = "white" ];
+  "MIMETHStrategy2.checkReward" -> "IERC20.balanceOf" [ color = "white" ];
+  "MIMETHStrategy2.estimateReinvestReward" -> "MIMETHStrategy2.checkReward" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2.reinvest" -> "MIMETHStrategy2.checkReward" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2.reinvest" -> "IERC20.balanceOf" [ color = "white" ];
+  "MIMETHStrategy2.reinvest" -> "MIMETHStrategy2._reinvest" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2._reinvest" -> "IMiniChefV2.harvest" [ color = "white" ];
+  "MIMETHStrategy2._reinvest" -> "IERC20.transfer" [ color = "white" ];
+  "MIMETHStrategy2._reinvest" -> "IERC20.transfer" [ color = "white" ];
+  "MIMETHStrategy2._reinvest" -> "MIMETHStrategy2._convertRewardTokensToDepositTokens" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2._reinvest" -> "MIMETHStrategy2._stakeDepositTokens" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2._reinvest" -> "IERC20.totalSupply" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2._convertRewardTokensToDepositTokens" -> "IRouter.getAmountsOut" [ color = "white" ];
+  "MIMETHStrategy2._convertRewardTokensToDepositTokens" -> "IRouter.swapExactTokensForTokens" [ color = "white" ];
+  "MIMETHStrategy2._convertRewardTokensToDepositTokens" -> "IRouter.getAmountsOut" [ color = "white" ];
+  "MIMETHStrategy2._convertRewardTokensToDepositTokens" -> "IRouter.swapExactTokensForTokens" [ color = "white" ];
+  "MIMETHStrategy2._convertRewardTokensToDepositTokens" -> "MIMETHStrategy2.convertSpell" [ color = "#1bc6a6" ];
+  "MIMETHStrategy2._convertRewardTokensToDepositTokens" -> "IRouter.addLiquidity" [ color = "white" ];
+  "MIMETHStrategy2.convertSpell" -> "IERC20.balanceOf" [ color = "white" ];
+  "MIMETHStrategy2.convertSpell" -> "IERC20.balanceOf" [ color = "white" ];
+  "MIMETHStrategy2.convertSpell" -> "IRouter.getAmountsOut" [ color = "white" ];
+  "MIMETHStrategy2.convertSpell" -> "IRouter.swapExactTokensForTokens" [ color = "white" ];
+  "MIMETHStrategy2.convertSpell" -> "IRouter.getAmountsOut" [ color = "white" ];
+  "MIMETHStrategy2.convertSpell" -> "IRouter.swapExactTokensForTokens" [ color = "white" ];
+  "MIMETHStrategy2._stakeDepositTokens" -> "IMiniChefV2.deposit" [ color = "white" ];
+  "MIMETHStrategy2._withdrawDepositTokens" -> "IMiniChefV2.withdraw" [ color = "white" ];
+  "MIMETHStrategy2.recoverETH" -> "MIMETHStrategy2.payable" [ color = "#1bc6a6" ];
+
+
+rankdir=LR
+node [shape=plaintext]
+subgraph cluster_01 { 
+label = "Legend";
+key [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0">
+  <tr><td align="right" port="i1">Internal Call</td></tr>
+  <tr><td align="right" port="i2">External Call</td></tr>
+  <tr><td align="right" port="i3">Defined Contract</td></tr>
+  <tr><td align="right" port="i4">Undefined Contract</td></tr>
+  </table>>]
+key2 [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0">
+  <tr><td port="i1">&nbsp;&nbsp;&nbsp;</td></tr>
+  <tr><td port="i2">&nbsp;&nbsp;&nbsp;</td></tr>
+  <tr><td port="i3" bgcolor="#445773">&nbsp;&nbsp;&nbsp;</td></tr>
+  <tr><td port="i4">
+    <table border="1" cellborder="0" cellspacing="0" cellpadding="7" color="#e8726d">
+      <tr>
+       <td></td>
+      </tr>
+     </table>
+  </td></tr>
+  </table>>]
+key:i1:e -> key2:i1:w [color="#1bc6a6"]
+key:i2:e -> key2:i2:w [color="white"]
+}
+}
