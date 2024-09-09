@@ -15,7 +15,7 @@
     "ethereum-waffle": "^3.4.4",
     "ethers": "^6.0.0",
     "hardhat": "^2.9.3",
-    "hardhat-tracer": "^1.1.0-rc.3",
+    "hardhat-tracer": "^3.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.1",
